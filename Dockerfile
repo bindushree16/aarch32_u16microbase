@@ -1,8 +1,9 @@
-FROM drydock/aarch32_u16:master
+FROM arm32v7/ubuntu:16.04
+
 MAINTAINER Avi "avi@shippable.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ADD . /home/shippable/appBase
+ADD . /aarch32_u16microbase
 
-RUN /home/shippable/appBase/install.sh && rm -rf /tmp && mkdir /tmp && chmod 1777 /tmp
+RUN /aarch32_u16microbase/install.sh && rm -rf /tmp && mkdir /tmp && chmod 1777 /tmp
