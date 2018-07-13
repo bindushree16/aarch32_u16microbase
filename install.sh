@@ -70,7 +70,7 @@ hash -r
 
 pip install -r /aarch32_u16microbase/requirements.txt
 
-NODE_VERSION=v8.11.2
+NODE_VERSION=v8.11.3
 wget https://nodejs.org/dist/"$NODE_VERSION"/node-"$NODE_VERSION"-linux-armv7l.tar.xz
 tar -xvf node-"$NODE_VERSION"-linux-armv7l.tar.xz
 cp -Rvf node-"$NODE_VERSION"-linux-armv7l/{bin,include,lib,share} /usr/local
